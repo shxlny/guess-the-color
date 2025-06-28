@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Угадай цвет</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .color-block {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+      }
+      .color-square {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px;
+        border: 2px solid #333;
+        border-radius: 5px;
+      }
+      .options {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .option {
+        padding: 8px 15px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+      }
+      .option:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Угадай цвет</h1>
+
+    <div class="color-block">
+      <div class="color-square" style="background-color: #ff5733"></div>
+      <div class="options">
+        <a href="wrong.html" class="option">#FF5773</a>
+        <a href="wrong.html" class="option">#33FF57</a>
+        <a href="wrong.html" class="option">#3357FF</a>
+      </div>
+    </div>
+
+    <div class="color-block">
+      <div class="color-square" style="background-color: #6a5acd"></div>
+      <div class="options">
+        <a href="wrong.html" class="option">#6A5ACD</a>
+        <a href="wrong.html" class="option">#CD6A5A</a>
+        <a href="correct.html" class="option">#5ACD6A</a>
+      </div>
+    </div>
+
+    <div class="color-block">
+      <div class="color-square" style="background-color: #20b2aa"></div>
+      <div class="options">
+        <a href="wrong.html" class="option">#B2AA20</a>
+        <a href="wrong.html" class="option">#20B2CA</a>
+        <a href="wrong.html" class="option">#AA20B2</a>
+      </div>
+    </div>
+  </body>
+</html>
